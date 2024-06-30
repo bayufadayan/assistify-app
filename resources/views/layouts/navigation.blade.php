@@ -1,3 +1,5 @@
+<!-- resources/views/layouts/navigation.blade.php -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Laravel</a>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -13,6 +15,9 @@
                 @else
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('user.dashboard') }}">User Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('saw.index') }}">SAW Process</a>
                     </li>
                 @endif
                 <li class="nav-item">

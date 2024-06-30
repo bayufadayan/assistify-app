@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InterviewController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\PendaftarController;
+use App\Http\Controllers\SAWController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -57,4 +58,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/user/upload-pendaftar', [PendaftarController::class, 'uploadFile'])->name('pendaftar.uploadFile');
     Route::get('/user/results-pendaftar', [PendaftarController::class, 'showResults'])->name('pendaftar.showResults');
     Route::delete('/user/delete-all-pendaftar', [PendaftarController::class, 'deleteAll'])->name('pendaftar.deleteAll');
+
+    Route::get('/saw-process', [SAWController::class, 'index'])->name('saw.index');
 });

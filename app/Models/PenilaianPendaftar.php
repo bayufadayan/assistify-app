@@ -1,4 +1,5 @@
 <?php
+// app/Models/PenilaianPendaftar.php
 
 namespace App\Models;
 
@@ -18,4 +19,9 @@ class PenilaianPendaftar extends Model
         'komitmen_jangka_panjang', 'visi_pribadi', 'kematangan_emosional', 'etika_kerja', 'kesesuaian_budaya', 'keletihan_fisik',
         'potensi'
     ];
+
+    public function pendaftar()
+    {
+        return $this->belongsTo(Pendaftar::class, 'NPM', 'NPM');
+    }
 }

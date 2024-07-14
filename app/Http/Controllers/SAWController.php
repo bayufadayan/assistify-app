@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -69,6 +70,8 @@ class SAWController extends Controller
             $penilaian->Rank = $rank++;
         }
 
-        return view('saw.index', compact('penilaians', 'criterias'));
+        $total = count($penilaians);
+
+        return view('saw.index', compact('penilaians', 'criterias', 'total'));
     }
 }

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Upload Data Mahasiswa')
+
 @section('content')
 <div class="container">
     <h2>Upload Data Mahasiswa</h2>

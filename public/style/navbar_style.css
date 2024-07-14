@@ -1,0 +1,33 @@
+.logo-navbar > img {
+    height: 50px;
+}
+
+.logo-navbar {
+    padding: 5px;
+}
+
+.myhover:hover {
+    border: 1px solid #dc3545;
+    background-color: #dc3545;
+}
+.myhover {
+    border: 1px solid #dc3545;
+}
+
+.myhover > i {
+    color: #dc3545;
+}
+
+.myhover:hover i {
+    color: white;
+}
+
+.myfont {
+    font-size: large;
+    font-weight: bold;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}

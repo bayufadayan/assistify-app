@@ -8,7 +8,7 @@ use App\Http\Controllers\PendaftarController;
 use App\Http\Controllers\SAWController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('mywelcome');
 });
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

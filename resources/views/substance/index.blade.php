@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
+@section('title', 'Substance Test - Scoring')
+
 @section('content')
 <div class="container">
+    @include('layouts.scoring_navigation')
     <h2>Tahap 2: Substance Test</h2>
     @if (session('success'))
         <div class="alert alert-success">
@@ -85,4 +88,6 @@
         {{-- <a href="{{ route('substance.random') }}" class="btn btn-secondary">Generate Data Acak</a> --}}
     </form>
 </div>
+
+<br><br><br>
 @endsection

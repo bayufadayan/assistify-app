@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Micro Teaching - Scoring')
+
 @section('content')
+@include('layouts.scoring_navigation')
 <div class="container">
     <h2>Tahap 3: Micro Teaching</h2>
     @if (session('success'))
@@ -97,4 +100,6 @@
         <button type="submit" class="btn btn-primary">Submit Nilai</button>
     </form>
 </div>
+
+<br><br><br>
 @endsection

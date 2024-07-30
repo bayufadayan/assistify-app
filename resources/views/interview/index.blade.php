@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Interview - Scoring')
+
 @section('content')
+@include('layouts.scoring_navigation')
 <div class="container">
     <h2>Tahap 1: Interview</h2>
     @if (session('success'))
@@ -110,4 +113,6 @@
         <button type="submit" class="btn btn-primary">Submit Nilai</button>
     </form>
 </div>
+
+<br><br><br>
 @endsection

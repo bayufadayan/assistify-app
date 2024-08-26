@@ -1,3 +1,13 @@
+<p align="center">
+    <span style="background-color: white; padding: 10px; border-radius: 15px; display: inline-block;">
+        <img src="/public/assets/images/favikon.png" width="90" alt="Laravel Logo" style="border-radius: 15px;">
+    </span>
+    <span style="background-color: white; padding: 10px; border-radius: 15px; display: inline-block;">
+        <img src="/public/assets/images/Primary-Secondary.png" width="400" alt="Laravel Logo" style="border-radius: 15px;">
+    </span>
+</p>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

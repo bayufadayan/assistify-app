@@ -22,6 +22,8 @@ class PendaftarController extends Controller
         ]);
 
         $file = $request->file('file');
+        $baseUrl = env('FLASK_API_URL');
+        $url = $baseUrl . '/process_daftar';
 
         if (!$file) {
             return back()->withErrors(['file' => 'Please upload a valid file.']);
@@ -35,7 +37,7 @@ class PendaftarController extends Controller
                 'file',
                 file_get_contents($filePath),
                 $fileName
-            )->post('http://127.0.0.1:5000/process_daftar');
+            )->post($url);
 
             if ($response->failed()) {
                 throw new \Exception('Failed to process file: ' . $response->body());

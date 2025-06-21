@@ -30,12 +30,15 @@ class StudentController extends Controller
         $filePath = $file->getPathname();
         $fileName = $file->getClientOriginalName();
 
+        $baseUrl = env('FLASK_API_URL');
+        $url = $baseUrl . '/process';
+
         try {
             $response = Http::attach(
                 'file',
                 file_get_contents($filePath),
                 $fileName
-            )->post('http://127.0.0.1:5000/process');
+            )->post($url);
 
             if ($response->failed()) {
                 throw new \Exception('Failed to process file: ' . $response->body());
